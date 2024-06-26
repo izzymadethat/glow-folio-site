@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url(css/_header.css);
-@import url(css/_button.css);
-@import url(css/_home.css);
-@import url(css/_about.css);
-@import url(css/_services.css);
-@import url(css/_testimonial.css);
-@import url(css/_gallery.css);
+@import "_header.css";
+@import "_button.css";
+@import "_home.css";
+@import "_about.css";
+@import "_services.css";
+@import "_testimonial.css";
+@import "_gallery.css";
 
 :root {
   --clr-bg: #000000;
