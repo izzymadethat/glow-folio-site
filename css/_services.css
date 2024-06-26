@@ -1,0 +1,65 @@
+.services {
+  position: relative;
+  z-index: 1;
+}
+.services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/assets/services-2.jpg") right top,
+    url("/assets/about-img.jpg") left center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.services__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.services__card {
+  background-color: var(--main-color);
+  height: 300px;
+  border-radius: 3rem;
+  border: 5px solid transparent;
+  cursor: pointer;
+  transition: var(--transition1);
+  color: var(--clr-bg);
+}
+
+.services__card:hover {
+  background-color: var(--clr-text);
+  border-color: var(--main-color);
+  box-shadow: var(--box-shadow);
+  transform: scale(1.03);
+}
+
+.services__card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  max-height: 200px;
+  align-items: baseline;
+  padding: 5rem;
+}
+
+.services__card-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 2;
+}
+
+.services__card-description {
+  font-size: 1.6rem;
+  font-weight: 600;
+  max-height: 100px;
+  line-height: 1.7;
+  margin: auto;
+}
